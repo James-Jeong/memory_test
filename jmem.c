@@ -19,7 +19,7 @@ void* jmemcpy( void *destination, const void *source, size_t num){
 	if( destination == NULL || source == NULL || num <= 0) return NULL;
 	char *dest = destination;
 	const char *src = source;
-	while( num--) *dest++ = *src++;
+	while(( num--) && ( dest != NULL) && ( src != NULL)) *dest++ = *src++;
 	return dest;
 }
 
@@ -39,7 +39,7 @@ void* jmemmove( void *destination, const void *source, size_t num){
 	else{
 		dest += num;
 		src += num;
-		while( num--) *--dest = *--src;
+		while(( num--) && ( dest != NULL) && ( src != NULL)) *--dest = *--src;
 	}
 	return dest;
 }

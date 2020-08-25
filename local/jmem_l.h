@@ -1,10 +1,11 @@
 #ifndef __JMEM_H__
 #define __JMEM_H__
 
+#include <stdio.h>
+
 //////////////////////////////////////////////////////////
 // definition & macro for jmem_t
 //////////////////////////////////////////////////////////
-#include <stdio.h>
 
 /** 성공 여부 */
 #define MEM_SUCCESS 1
